@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+   
+
+    <header>
+        <!-- Link to view high scores -->
+        <a href="high_scores.html">View High Scores</a>
+
+        <!-- Timer to start when start button is hit -->
+        <!-- <div id="timer"></div> -->
+    </header>
+
+    <!-- Initial welcome screen explaining the rules of the quiz  -->
+    <!-- Followed by Questions to answer -->
+    <main>
+
+        <div id="timer"></div>
+        <br>
+        <div id="quizSpace">
+            <h2>Welcome to the Coding Quiz!</h2>
+            <p id="welcome">
+                You have 30 seconds to complete the quiz.
+                Correct answers will take you to the next question.
+                Incorrect answers take away 5 seconds of your time.
+                Record your score at the end. 
+                Highest amount of time remaining wins!
+            </p>
+
+            <!-- Start button to begin quiz -->
+        </div>
+
+        <button type="button" id="start" class="btn btn-info">Start Quiz</button>
+
+        <div id="answer"></div>
+    </main>
+
+    <!-- When the game is over, the player can save their initials and their score into the high scores chart -->
+    <form>
+        <div id="initials-form" style="display: none">
+            <label for="initials-text">Enter Initials to record score:</label>
+            <input type="text" placeholder="Initials" name="initials-text" id="initials-text">
+            <button type="button" id="submit" class="btn btn-dark">Submit</button>
+        </div>
+
+        <!-- Message if initials aren't entered -->
+        <div id="error" style="display: none" ></div>
+    </form>
+
+
+<script src="./assets/js/script.js"></script>
+
+
+</body>
+</html>

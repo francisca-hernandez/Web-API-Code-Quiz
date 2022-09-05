@@ -1,0 +1,12 @@
+body {
+    background-image: url("../images/BGphoto3.jpg");
+    background-repeat: no-repeat;
+    font: black;
+    font-size: larger;
+    font-weight:bold;
+
+    }
+
+    main {
+        word-wrap:break-word;
+    }
