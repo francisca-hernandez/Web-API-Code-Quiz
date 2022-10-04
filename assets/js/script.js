@@ -1,6 +1,7 @@
+//Quiz questions
 var questions = [
     {
-      title: "which method saces data to locatStorage:",
+      title: "which method saves data to locatStorage:",
       choices: ["setItem", "nowItem", "getItem", "putawayItem"],
       answer: "setItem"
     },
@@ -17,7 +18,7 @@ var questions = [
         "booleans",
         "all of the above"
       ],
-      answer: "boolean"
+      answer: "booleans"
     },
     {
       title:
@@ -35,24 +36,8 @@ var questions = [
  
   // Timer established on screen
 var secondsLeft = 31;
-// if (timerEl) {
-//     timerEl.textContent = secondsLeft + " seconds remaining";
-// }
 
-// // Timer countdown function
-// function setTime() {
-//     var timerInterval = setInterval(function() {
-//         secondsLeft--;
-//         timerEl.textContent = secondsLeft + " seconds remaining";
-
-//         if (secondsLeft <= i || questionCounter === quizArr.length) {
-//             clearInterval(timerInterval);
-//             gameOverMsg();
-//         }
-//     }, 1000);
-// }
-
-//Display Questions
+//Display Questions with timer
 var i=0
 
 document.querySelector("#start").onclick= function(){
@@ -67,9 +52,10 @@ document.querySelector("#start").onclick= function(){
     }, 1000)
 }
 
+//display questions one at a time 
+
 function displayQuestion(){
     if(i< questions.length){
-
 
        // document.querySelector('#quizSpace').innerHTML= "";
         document.querySelector("#quizSpace").innerHTML=
@@ -98,3 +84,10 @@ document.querySelector("#quizSpace").onclick=function(e){
         displayQuestion()
     }, 1000)
 }
+
+
+// ends game and prompts for input and clears timer
+
+//generates score and pesent with initials
+
+//executes function to store the score as a string in local storage

@@ -35,7 +35,13 @@ THEN I can save my initials and score
 * JavaScript
 * Web API's
 
-## Website
+
+### This website is available at the following URL:
+
+
+### Screeenshots
+
+![Main page of of coding quiz](/assets/Screenshot%202022-10-04%20154004.jpg)
 
 
 ## Contribution
